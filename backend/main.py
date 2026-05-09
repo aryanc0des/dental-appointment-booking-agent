@@ -35,6 +35,7 @@ app = FastAPI(
     description="Backend for the ElevenLabs voice agent demo.",
     version="1.0.0",
     lifespan=lifespan,
+    redirect_slashes=False,
 )
 
 app.add_middleware(

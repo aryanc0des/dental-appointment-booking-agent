@@ -237,8 +237,8 @@ async function refresh() {
 
   try {
     const [conv, appt, convs, appts] = await Promise.all([
-      apiFetch("/api/conversations/latest").catch(() => null),
-      apiFetch("/api/appointments/latest").catch(() => null),
+      apiFetch("/api/conversations/latest").catch(() => []),
+      apiFetch("/api/appointments/latest").catch(() => []),
       apiFetch("/api/conversations?limit=20").catch(() => []),
       apiFetch("/api/appointments?limit=20").catch(() => []),
     ]);

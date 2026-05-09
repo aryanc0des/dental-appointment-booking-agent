@@ -40,7 +40,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://dental-appointment-booking-agent.vercel.app/"],      # tighten in production
+    allow_origins=["https://dental-appointment-booking-agent.vercel.app"],      # tighten in production
     allow_methods=["*"],
     allow_headers=["*"],
 )

@@ -10,7 +10,7 @@
  * Change API_BASE if your backend is on a different host/port.
  */
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://dental-appointment-booking-agent.onrender.com";
 
 // ─── State ────────────────────────────────────────────────────────────────────
 let lastConvId    = null;
